@@ -1,6 +1,6 @@
 {
   "name": "busy-wait-cursor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "display wait cursor when browser is busy",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thunderrun/busy-wait-cursor/issues"
   },
-  "homepage": "https://github.com/thunderrun/busy-wait-cursor#readme"
+  "homepage": "https://github.com/thunderrun/busy-wait-cursor#readme",
+  "dependencies": {
+    "mask": "^0.2.2"
+  }
 }

@@ -1,23 +1,29 @@
+import Mask from "mask";
+
 class Busy {
   constructor() {
-    this.mask = document.createElement('div');
-    this.mask.style.cssText = 'position:fixed;left:0;top:0;width:100%;height:100%;z-index:999;cursor:wait;display:none;';
-    document.body.appendChild(this.mask);
+    Mask.init({
+      duration: 1,
+      backgroundColor: "unset"
+    });
+    Mask.style({
+      zIndex: 999,
+      cursor: "wait"
+    });
   }
 
-  wait() {
-    return new Promise(resolve=>{
-      this.mask.style.display = 'initial';
-      resolve(this.done.bind(this));
-    })
+  async wait() {
+    await Mask.show();
+    return new Promise(resolve => {
+      resolve(this.done);
+    });
   }
 
   done() {
-    setTimeout(()=>{
-      this.mask.style.display = 'none';
-    }, 0)
+    setTimeout(() => {
+      Mask.hide();
+    }, 0);
   }
-
 }
 
 export default new Busy();
