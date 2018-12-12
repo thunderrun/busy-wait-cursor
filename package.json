@@ -1,6 +1,6 @@
 {
   "name": "busy-wait-cursor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "display wait cursor when browser is busy",
   "main": "index.js",
   "scripts": {
