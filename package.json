@@ -1,0 +1,19 @@
+{
+  "name": "busy-wait-cursor",
+  "version": "1.0.0",
+  "description": "display wait cursor when browser is busy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thunderrun/busy-wait-cursor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thunderrun/busy-wait-cursor/issues"
+  },
+  "homepage": "https://github.com/thunderrun/busy-wait-cursor#readme"
+}

@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script type="module">
+      import Busy from "./index.js";
+      // Busy.wait().then((done) => {
+      //   const a = 3;
+      //   done();
+      // });
+      (async () => {
+        await Busy.wait();
+        await new Promise(resolve => {
+          setTimeout(function() {
+            resolve("done");
+          }, 5000);
+        });
+        Busy.done();
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
