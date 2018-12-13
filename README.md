@@ -32,4 +32,4 @@ Busy.wait().then(done => {
 
 ## Known Issues
 
-Cursor won't change if dev tools is open
+Cursor won't change without moving if dev tools is open
